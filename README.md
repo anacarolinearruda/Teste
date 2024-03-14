@@ -19,4 +19,51 @@ Entendi, aqui está o plano de testes completo, incluindo a descrição de como 
 | 11 | Compatibilidade | Compatibilidade de Dispositivos | Acessar o sistema utilizando diferentes dispositivos com diferentes tamanhos de tela e resoluções. | Teste de Acesso em Dispositivos: O testador acessará o sistema utilizando uma variedade de dispositivos, como desktops, laptops, tablets e smartphones, com diferentes tamanhos de tela e resoluções. | O sistema deve se adaptar automaticamente ao tamanho da tela do dispositivo e exibir corretamente todos os elementos da interface. |
 | 12 | Compatibilidade | Compatibilidade de Sistemas Operacionais | Acessar o sistema utilizando diferentes sistemas operacionais em dispositivos compatíveis. | Teste de Acesso em Sistemas Operacionais: O testador acessará o sistema utilizando uma variedade de sistemas operacionais, como Windows, macOS, Linux, iOS e Android. | O sistema deve funcionar corretamente em todos os sistemas operacionais testados. |
 
+Claro, aqui está um plano de teste para avaliar o desempenho do sistema:
+
+### Plano de Testes de Desempenho
+
+1. **Teste de Carga**:
+   - **Objetivo**: Avaliar o desempenho do sistema sob carga máxima simulada.
+   - **Descrição**: Simular um grande número de usuários acessando o sistema simultaneamente e monitorar o tempo de resposta e o consumo de recursos do servidor.
+   - **Método de Teste**: Utilizar ferramentas de teste de carga, como Apache JMeter ou Gatling, para simular o comportamento de múltiplos usuários acessando o sistema ao mesmo tempo.
+   - **Resultado Esperado**: O sistema deve ser capaz de lidar com a carga máxima esperada sem experimentar tempos de resposta excessivamente longos ou falhas devido a sobrecarga do servidor.
+
+2. **Teste de Estresse**:
+   - **Objetivo**: Avaliar a capacidade do sistema de lidar com picos repentinos de tráfego.
+   - **Descrição**: Aumentar gradualmente a carga no sistema até atingir o ponto de falha, observando como o sistema se comporta sob pressão extrema.
+   - **Método de Teste**: Utilizar ferramentas de teste de estresse para aumentar gradualmente a carga no sistema até que ocorram falhas ou degradação significativa do desempenho.
+   - **Resultado Esperado**: O sistema deve ser capaz de lidar com picos repentinos de tráfego sem falhas graves ou tempos de resposta excessivamente longos.
+
+3. **Teste de Tempo de Resposta**:
+   - **Objetivo**: Medir o tempo de resposta do sistema em diferentes condições de carga.
+   - **Descrição**: Enviar solicitações ao sistema e medir o tempo que leva para o sistema responder em diferentes momentos.
+   - **Método de Teste**: Utilizar ferramentas de monitoramento de desempenho para medir o tempo de resposta do sistema em diferentes condições de carga.
+   - **Resultado Esperado**: O sistema deve manter tempos de resposta aceitáveis, mesmo sob carga pesada, garantindo uma experiência de usuário fluida e responsiva.
+
+4. **Teste de Capacidade**:
+   - **Objetivo**: Determinar o número máximo de usuários que o sistema pode suportar simultaneamente.
+   - **Descrição**: Aumentar gradualmente o número de usuários simulados no sistema até atingir o ponto de saturação, onde o desempenho começa a degradar significativamente.
+   - **Método de Teste**: Utilizar ferramentas de teste de capacidade para aumentar gradualmente o número de usuários simulados no sistema e monitorar o desempenho à medida que a carga aumenta.
+   - **Resultado Esperado**: Identificar o número máximo de usuários que o sistema pode suportar simultaneamente sem comprometer significativamente o desempenho.
+
+5. **Teste de Estabilidade**:
+   - **Objetivo**: Avaliar a estabilidade do sistema ao longo do tempo.
+   - **Descrição**: Executar o sistema continuamente por um período prolongado sob carga moderada e monitorar se ocorrem falhas ou degradação do desempenho ao longo do tempo.
+   - **Método de Teste**: Executar o sistema continuamente por várias horas ou dias sob carga moderada e monitorar o desempenho e a estabilidade do sistema ao longo do tempo.
+   - **Resultado Esperado**: O sistema deve ser capaz de manter um desempenho consistente e estável ao longo do tempo, sem falhas ou degradação significativa do desempenho.
+
+### Anexo à Tabela de Testes
+
+| Nº | Tipo de Teste | Requisito | Teste | Método de Teste | Resultado Esperado |
+|----|---------------|-----------|-------|-----------------|---------------------|
+| ... | ... | ... | ... | ... | ... |
+| 13 | Desempenho | Teste de Carga | Avaliar o desempenho do sistema sob carga máxima simulada. | Utilizar ferramentas de teste de carga para simular um grande número de usuários acessando o sistema simultaneamente. | O sistema deve lidar com a carga máxima sem tempos de resposta excessivamente longos ou falhas do servidor. |
+| 14 | Desempenho | Teste de Estresse | Avaliar a capacidade do sistema de lidar com picos repentinos de tráfego. | Aumentar gradualmente a carga no sistema até atingir o ponto de falha e observar o comportamento do sistema. | O sistema deve resistir a picos de tráfego sem falhas graves ou degradação significativa do desempenho. |
+| 15 | Desempenho | Teste de Tempo de Resposta | Medir o tempo de resposta do sistema em diferentes condições de carga. | Utilizar ferramentas de monitoramento de desempenho para medir o tempo de resposta do sistema. | O sistema deve manter tempos de resposta aceitáveis mesmo sob carga pesada. |
+| 16 | Desempenho | Teste de Capacidade | Determinar o número máximo de usuários que o sistema pode suportar simultaneamente. | Utilizar ferramentas de teste de capacidade para aumentar gradualmente o número de usuários simulados no sistema. | Identificar o número máximo de usuários que o sistema pode suportar sem comprometer significativamente o desempenho. |
+| 17 | Desempenho | Teste de Estabilidade | Avaliar a estabilidade do sistema ao longo do tempo. | Executar o sistema continuamente por um período prolongado sob carga moderada e monitorar o desempenho. | O sistema deve manter um desempenho consistente e estável ao longo do tempo, sem falhas ou degradação significativa. |
+
+Espero que isso atenda às suas necessidades! Se precisar de mais alguma coisa, estou à disposição.
+
 Este plano de testes abrange uma variedade de cenários e garantirá que o sistema seja testado de forma abrangente quanto à funcional
